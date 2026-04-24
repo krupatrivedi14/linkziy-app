@@ -1,0 +1,114 @@
+.section {
+  background: var(--black);
+  padding: 90px 80px;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.glow {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 400px;
+  height: 200px;
+  background: radial-gradient(ellipse, rgba(200,240,0,0.18), transparent 70%);
+  pointer-events: none;
+}
+
+.label {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  justify-content: center;
+  font-size: 10.5px;
+  font-weight: 800;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: var(--gray);
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.h1 {
+  font-family: var(--font-display);
+  font-size: clamp(56px, 7vw, 84px);
+  line-height: 0.94;
+  color: var(--white);
+  margin-bottom: 8px;
+  position: relative;
+}
+
+.h2 {
+  font-family: var(--font-display);
+  font-size: clamp(56px, 7vw, 84px);
+  line-height: 0.94;
+  color: var(--lime);
+  margin-bottom: 36px;
+  position: relative;
+}
+
+.btns {
+  display: flex;
+  gap: 14px;
+  justify-content: center;
+  flex-wrap: wrap;
+  position: relative;
+}
+
+.btnCta {
+  display: inline-flex;
+  align-items: center;
+  gap: 9px;
+  background: var(--lime);
+  color: var(--black);
+  font-family: var(--font-body);
+  font-size: 11.5px;
+  font-weight: 800;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  padding: 17px 30px;
+  border: none;
+  border-radius: 8px;
+  cursor: none;
+  transition: transform 0.2s, box-shadow 0.2s;
+  box-shadow: 0 4px 22px rgba(200,240,0,0.42);
+}
+
+.btnCta:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 9px 32px rgba(200,240,0,0.52);
+}
+
+.btnOutline {
+  font-family: var(--font-body);
+  font-size: 11.5px;
+  font-weight: 800;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  padding: 17px 28px;
+  border-radius: 8px;
+  border: 1.5px solid rgba(255,255,255,0.2);
+  background: transparent;
+  color: var(--white);
+  cursor: none;
+  transition: border-color 0.2s, transform 0.2s;
+}
+
+.btnOutline:hover {
+  border-color: rgba(255,255,255,0.4);
+  transform: translateY(-1px);
+}
+
+.fine {
+  margin-top: 20px;
+  font-size: 12px;
+  color: rgba(255,255,255,0.30);
+  letter-spacing: 0.5px;
+  position: relative;
+}
+
+@media (max-width: 768px) {
+  .section { padding: 60px 24px; }
+}

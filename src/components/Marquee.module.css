@@ -1,0 +1,42 @@
+.marqueeWrap {
+  width: 100%;
+  overflow: hidden;
+  background: #050505;
+  border-top: 1px solid rgba(255, 255, 255, 0.04);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.04);
+  padding: 14px 0;
+}
+
+.marqueeTrack {
+  display: flex;
+  align-items: center;
+  width: max-content;
+  animation: scrollLeft 26s linear infinite;
+}
+
+.marqueeItem {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding-right: 42px;
+  white-space: nowrap;
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 0.18em;
+  color: #f5f1e8;
+}
+
+.star {
+  color: var(--lime, #d7ff00);
+  font-size: 15px;
+  line-height: 1;
+}
+
+@keyframes scrollLeft {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
