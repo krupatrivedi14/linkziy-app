@@ -1,5 +1,3 @@
-/* EXACT SAME STYLES FROM NAVBAR */
-
 .logo {
   display: flex;
   align-items: center;
@@ -7,10 +5,8 @@
   text-decoration: none;
   position: relative;
   z-index: 2;
-
   padding: 8px 12px;
   border-radius: 14px;
-
   background: rgba(0, 0, 0, 0.14);
   backdrop-filter: blur(8px);
   -webkit-backdrop-filter: blur(8px);
@@ -31,6 +27,12 @@
   letter-spacing: 0.4px;
   color: #ffffff;
   line-height: 1;
-
   text-shadow: 0 1px 2px rgba(0, 0, 0, 0.35);
+}
+
+.compactLogo {
+  width: 24px;
+  height: 24px;
+  object-fit: contain;
+  display: block;
 }
