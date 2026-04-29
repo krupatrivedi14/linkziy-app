@@ -866,11 +866,27 @@ export default function Dashboard() {
     .dp-card:hover { box-shadow: 0 8px 36px rgba(10,10,10,0.07), 0 2px 6px rgba(10,10,10,0.04); }
     .dp-card.dp-featured { border-color: rgba(200,240,0,0.9); box-shadow: 0 4px 24px rgba(200,240,0,0.12), 0 1px 4px rgba(10,10,10,0.04); }
     .dp-cardContent { flex: 1; }
-    .dp-planName { margin: 0 0 14px; font-size: 22px; font-weight: 800; letter-spacing: -0.05em; line-height: 1.1; color: #050505; }
+    .dp-planName {
+  font-size: 20px !important;
+  font-weight: 700 !important;
+  letter-spacing: -0.03em;
+  color: #1f2933;
+}
     .dp-planDesc { margin: 0 0 28px; font-size: 15px; line-height: 1.6; color: #74797f; min-height: 96px; }
     .dp-priceLine { display: flex; align-items: flex-end; gap: 2px; margin-bottom: 20px; }
-    .dp-price { font-size: 48px; font-weight: 900; letter-spacing: -0.07em; line-height: 0.9; color: #050505; }
-    .dp-month { margin-bottom: 6px; font-size: 15px; color: #95979e; font-weight: 500; }
+    .dp-price {
+      font-size: 42px !important;
+      font-weight: 700 !important;
+      letter-spacing: -0.04em !important;
+      color: #1f2933 !important;
+      line-height: 1 !important;
+    }
+    .dp-month {
+  font-size: 13px !important;
+  color: #7b8490 !important;
+  margin-left: 4px;
+  font-weight: 500;
+}
     .dp-features { list-style: none; margin: 0 0 4px; padding: 0; display: flex; flex-direction: column; gap: 10px; min-height: 220px; }
     .dp-features li { display: flex; align-items: flex-start; gap: 10px; font-size: 15px; color: #2c3340; line-height: 1.25; }
     .dp-tick { flex-shrink: 0; font-size: 13px; font-weight: 800; color: #a8e000; margin-top: 1px; line-height: 1; }
